@@ -1,7 +1,7 @@
 import unittest
 import program
 
-class Test_Str_methods():
+class Test_Str_methods(unittest.TestCase):
 
     def test_upper(self):
         self.assertEqual(program.doUpper("ala ma kota"), "ALA MA KOTA")
@@ -10,8 +10,8 @@ class Test_Str_methods():
         self.assertEqual(program.doCapitalise("ola"), "Ola")
 
     def test_replace(self):
-        str = program.doReplace("co", "na co")
-        self.assertTrue(str.index("na co") > 0)
+        str = tester.doReplace("bananas", "apples", "I like bananas")
+        self.assertTrue(str.index("apples") > 0
 
     def test_lower(self):
         self.assertEqual(program.doLower("QWERTY"), "qwerty")
