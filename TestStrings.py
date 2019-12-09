@@ -10,13 +10,8 @@ class Test_Str_methods(unittest.TestCase):
         self.assertEqual(program.doCapitalize("ola"), "Ola")
 
     def test_replace(self):
-<<<<<<< HEAD
-        str = tester.doReplace("bananas", "apples", "I like bananas")
-        self.assertTrue(str.index("apples") > 0
-=======
         str = program.doReplace("bananas", "apples", "I like bananas")
         self.assertTrue(str.index("apples") > 0)
->>>>>>> 9785cad184e217b3828e12a44cc7bd6757863cde
 
     def test_lower(self):
         self.assertEqual(program.doLower("QWERTY"), "qwerty")
